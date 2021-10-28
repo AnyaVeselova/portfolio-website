@@ -95,10 +95,25 @@ a {
 }
 
 .link {
-  color: black;
+  color: var(--color-secondary);
   font-weight: 600;
   text-transform: lowercase;
-  background: turquoise;  
+  background: var(--color-accent);  
   border-radius: 2rem;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
+  font-size: 1.6rem;
+}
+
+.link:hover {
+ opacity: 0.5; 
+}
+
+/*icons*/
+.icon {
+  width: 30px;
+  height: 30px;  
+}
+
+.icon--primary {
+  fill: #16E0BD;
 }
