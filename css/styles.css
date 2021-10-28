@@ -1,0 +1,21 @@
+/*Navigation*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  line-height: 5.2rem;    
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
