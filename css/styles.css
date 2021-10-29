@@ -66,13 +66,32 @@ p {
   }
 }
 
+/*Lists*/
+.list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 /*Navigation*/
 .nav {
-  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 1rem;
+}
+
+.nav__list {
+  width: 100%;
+}
+
+.nav__item {
+  padding: 0 2rem; 
+  line-height: 1.5; 
+}
+
+.nav__item > a {
+  color: var(--color-secondary);
+  font-weight: 900;
 }
 
 .collapsible__content {
@@ -95,8 +114,8 @@ a {
 
 /*icons*/
 .icon {
-  width: 30px;
-  height: 30px;  
+  width: 40px;
+  height: 40px;  
 }
 
 .icon--primary {
