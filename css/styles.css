@@ -131,6 +131,13 @@ h3 {
   padding: .25em 1em;
 }
 
+.section__subtitle--work {
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold); 
+  margin-bottom: 1.5em; 
+}
+
+
 /* header */
 
 nav {
@@ -231,4 +238,77 @@ nav {
 .icon {
   width: 40px;
   height: 40px;
+}
+
+/*About me*/
+.about-me {
+  display: grid;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.about-me__img {
+  box-shadow: var(--bs);
+}
+
+@media screen and (min-width: 780px) {
+  .about-me {    
+    grid-template-columns: 1fr 200px;
+    grid-template-areas: 
+    "title img"
+    "subtitle img"
+    "text img";
+    grid-column-gap: 2em;
+  }
+
+  .section__title--about {
+    grid-area: title;
+    width: calc(100% + 1.5em);
+  }
+
+  .section__subtitle--about {
+    grid-column: 1/ -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px + 3em);
+  }
+
+  .about-me__img {
+    grid-area: img;
+    z-index: 2;
+    position: relative;
+  }
+}
+
+/*My Work*/
+.my-work {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;  
+}
+
+.portfolio {
+  display: grid;
+  max-width: 1240px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  
+}
+
+.portfolio__item {
+  background: var(--clr-accent);
+  overflow: hidden;
+}
+
+.portfolio__img {
+  transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
+  opacity 250ms linear;
+}
+
+.portfolio__img:hover {
+  transform: scale(1.2);
+  opacity: .5;
 }
