@@ -20,13 +20,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
       <div class="logo">
-        <svg class="logo__icon">
-          <use xlink:href="icons/logo_sprite.svg#logo"></use>
-        </svg>
+        <img src="icons/logo.png" alt="" srcset="" />
       </div>
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
@@ -49,21 +48,37 @@
 
     <!-- Introduction -->
     <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
+      <h1 class="section__title section__title--intro" data-aos="fade-left">
         Hi, I am <strong>Anna Sonina</strong>
       </h1>
-      <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+      <p
+        class="section__subtitle section__subtitle--intro"
+        data-aos="fade-left"
+      >
+        front-end dev
+      </p>
       <img
         class="intro__img"
         src="https://picsum.photos/300"
         alt="a picture of Jane Smith smiling"
+        data-aos="fade-right"
       />
     </section>
 
     <!-- My services -->
     <section class="my-services" id="services">
-      <h2 class="section__title section__title--services">What I do</h2>
-      <div class="services">
+      <h2
+        class="section__title section__title--services"
+        data-aos="zoom-in-down"
+      >
+        What I do
+      </h2>
+      <div
+        class="services"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
         <div class="service">
           <h3>Design + Development</h3>
           <p>
@@ -104,12 +119,31 @@
 
     <!-- About me -->
     <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">
+      <h2
+        class="section__title section__title--about"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
+        Who I am
+      </h2>
+      <p
+        class="section__subtitle section__subtitle--about"
+        class="section__title section__title--about"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         Lorem ipsum dolor sit amet.
       </p>
 
-      <div class="about-me__body">
+      <div
+        class="about-me__body"
+        class="section__title section__title--about"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed culpa
           reprehenderit architecto doloremque aperiam exercitationem, nisi autem
@@ -130,17 +164,31 @@
         class="about-me__img"
         src="https://picsum.photos/300/450"
         alt="Jane leaning against a bus"
+        data-aos="fade-up"
+        data-aos-duration="3000"
       />
     </section>
 
     <!-- My Work -->
     <section class="my-work" id="work">
-      <h2 class="section__title">My work</h2>
-      <p class="section__subtitle--work">A selection of my range of work</p>
+      <h2
+        class="section__title"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-center"
+      >
+        My work
+      </h2>
+      <p
+        class="section__subtitle--work"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-center"
+      >
+        A selection of my range of work
+      </p>
 
-      <div class="portfolio">
+      <div class="portfolio" data-aos="fade-up" data-aos-duration="3000">
         <!-- Portfolio item 01 -->
-        <a href="#" class="portfolio__item">
+        <a href="portfolio-item.html" class="portfolio__item">
           <img
             src="https://picsum.photos/200?random=1"
             alt=""
@@ -149,7 +197,7 @@
         </a>
 
         <!-- Portfolio item 02 -->
-        <a href="#" class="portfolio__item">
+        <a href="portfolio-item.html" class="portfolio__item">
           <img
             src="https://picsum.photos/200?random=2"
             alt=""
@@ -158,7 +206,7 @@
         </a>
 
         <!-- Portfolio item 03 -->
-        <a href="#" class="portfolio__item">
+        <a href="portfolio-item.html" class="portfolio__item">
           <img
             src="https://picsum.photos/200?random=3"
             alt=""
@@ -167,7 +215,7 @@
         </a>
 
         <!-- Portfolio item 04 -->
-        <a href="#" class="portfolio__item">
+        <a href="portfolio-item.html" class="portfolio__item">
           <img
             src="https://picsum.photos/200?random=4"
             alt=""
@@ -176,7 +224,7 @@
         </a>
 
         <!-- Portfolio item 05 -->
-        <a href="#" class="portfolio__item">
+        <a href="portfolio-item.html" class="portfolio__item">
           <img
             src="https://picsum.photos/200?random=5"
             alt=""
@@ -185,7 +233,7 @@
         </a>
 
         <!-- Portfolio item 06 -->
-        <a href="#" class="portfolio__item">
+        <a href="portfolio-item.html" class="portfolio__item">
           <img
             src="https://picsum.photos/200?random=6"
             alt=""
@@ -194,7 +242,7 @@
         </a>
 
         <!-- Portfolio item 07 -->
-        <a href="#" class="portfolio__item">
+        <a href="portfolio-item.html" class="portfolio__item">
           <img
             src="https://picsum.photos/200?random=7"
             alt=""
@@ -203,7 +251,7 @@
         </a>
 
         <!-- Portfolio item 08 -->
-        <a href="#" class="portfolio__item">
+        <a href="portfolio-item.html" class="portfolio__item">
           <img
             src="https://picsum.photos/200?random=8"
             alt=""
@@ -212,7 +260,7 @@
         </a>
 
         <!-- Portfolio item 09 -->
-        <a href="#" class="portfolio__item">
+        <a href="portfolio-item.html" class="portfolio__item">
           <img
             src="https://picsum.photos/200?random=9"
             alt=""
@@ -220,8 +268,8 @@
           />
         </a>
 
-        <!-- Portfolio item 0 0-->
-        <a href="#" class="portfolio__item">
+        <!-- Portfolio item 10-->
+        <a href="portfolio-item.html" class="portfolio__item">
           <img
             src="https://picsum.photos/200?random=10"
             alt=""
@@ -261,5 +309,9 @@
       </ul>
     </footer>
     <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
