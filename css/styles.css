@@ -291,7 +291,8 @@ header {
 
 .intro__img {
   list-style: none;
-  box-shadow: var(--bs);  
+  box-shadow: var(--bs);
+  max-height: 300px;  
 }
 
 @media screen and (min-width: 600px) {
@@ -306,7 +307,7 @@ header {
 
   .intro__img {
     grid-area: img;
-    min-width: 250px;
+    min-width: 300px;
     position: relative;
     z-index: 2;
   }
