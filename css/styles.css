@@ -110,6 +110,12 @@ h3 {
   font-family: 'Source Code Pro', Arial, Helvetica, sans-serif;
 }
 
+.attention {
+  background: var(--clr-accent);
+  text-align: center;
+  font-weight: var(--fw-bold);
+}
+
 .section__title { 
   margin-bottom: .2em;
 }
