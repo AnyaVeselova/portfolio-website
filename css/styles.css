@@ -166,7 +166,7 @@ header {
   color: var(--clr-dark);
   /*The next steps mean that the nav will take the space of entire screen*/
   top: 0;
-  bottom: 38%;
+  bottom: 0;
   left: 80%;
   right: 0;
   z-index: 100;  
