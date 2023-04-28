@@ -1,8 +1,7 @@
 {
   "name": "my-website",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "source": "index.html",
   "dependencies": {
     "parcel-bundler": "^1.12.5"
   },
@@ -12,7 +11,8 @@
     "sass": "^1.52.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,7 @@
   "bugs": {
     "url": "https://github.com/AnyaSonina/portfolio-website/issues"
   },
-  "homepage": "https://github.com/AnyaSonina/portfolio-website#readme"
+  "homepage": "https://github.com/AnyaSonina/portfolio-website#readme",
+  "main": "index.html",
+  "description": ""
 }
