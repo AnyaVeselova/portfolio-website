@@ -817,14 +817,13 @@ nav.shift ul li a:hover:after {
 @media (min-width: 1024px) {
   .leaf--left, .leaf--right {
     display: block;
+    opacity: 0.4;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .leaf--left, .leaf--right {
     display: block;
-    height: 60%;
-    top: 5em;
   }
 }
 
@@ -836,7 +835,7 @@ nav.shift ul li a:hover:after {
     top: 6em;
   }
   .leaf--right {
-    top: 22em;
+    top: 27em;
   }
 }
 
