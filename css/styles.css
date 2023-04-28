@@ -678,6 +678,18 @@ header {
   width: 100%;
 }
 
+@media (max-width: 600px) {
+  .spacer_footer {
+    aspect-ratio: 500/100;
+  }
+}
+
+@media (max-width: 400px) {
+  .spacer_footer {
+    aspect-ratio: 300/100;
+  }
+}
+
 .wave1 {
   background-image: url("../images/wave-haikei.svg");
   border-top: 30px solid #f7e1d7;
