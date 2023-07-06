@@ -246,7 +246,6 @@ header {
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: center;
-    align-items: center;
   }
 }
 
@@ -878,9 +877,67 @@ nav.shift ul li a:hover:after {
   }
 }
 
-/* General styles */
-/* endable this to add smooth scrolling */
-/* html {
-    scroll-behavior: smooth;
-} */
-/*# sourceMappingURL=styles.css.map */
+/*animation*/
+
+.fade-right__hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.fade-right__show {
+  opacity: 1;
+  z-index: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.fade-left__hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.fade-left__show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.fade-up__hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-2em);
+  transition: all 1s;
+}
+
+.fade-up__show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.service:nth-child(2) {
+  transition-delay: 200ms;
+
+}
+
+.service:nth-child(3) {
+  transition-delay: 600ms;
+}
+
+.nav__item:nth-child(2) {
+  transition-delay: 100ms;
+}
+
+.nav__item:nth-child(3) {
+  transition-delay: 200ms;
+}
+
+.nav__item:nth-child(4) {
+  transition-delay: 300ms;
+}
+
+
