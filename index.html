@@ -14,9 +14,9 @@
       rel="stylesheet"
     />
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -27,13 +27,12 @@
   </head>
   <body>
     <header>
-      <div class="logo fade-right__hidden" 
-      ><img src="./images/blobanimation.svg" /></div>
+      <div class="logo fade-right__hidden">
+        <img src="./images/blobanimation.svg" />
+      </div>
 
-      <nav class="nav shift " >
-        <ul class="list nav__list" 
-        
-        >
+      <nav class="nav shift">
+        <ul class="list nav__list">
           <li class="nav__item fade-left__hidden">
             <a href="#home" class="nav__link">Home</a>
           </li>
@@ -52,11 +51,12 @@
     <div class="spacer_header wave_header"></div>
     <!-- Introduction -->
     <section class="intro" id="home">
-          
-      <h1 class="section__title section__title--intro fade-left__hidden"  >
+      <h1 class="section__title section__title--intro fade-left__hidden">
         Hi, I am <strong>Anna Sonina</strong>
       </h1>
-      <p class="section__subtitle section__subtitle--intro fade-left__hidden" >front-end dev</p>
+      <p class="section__subtitle section__subtitle--intro fade-left__hidden">
+        front-end dev
+      </p>
 
       <img
         class="intro__img fade-right__hidden"
@@ -64,19 +64,19 @@
         alt="a picture of Jane Smith smiling"
       />
     </section>
-    
-  
-      <div class="leaves_container">
-        <img class="leaf--left" src="./images/left-leaf.png"/>
-        <img class="leaf--right" src="./images/left-leaf.png"/>
-      </div>  
 
+    <div class="leaves_container">
+      <img class="leaf--left" src="./images/left-leaf.png" />
+      <img class="leaf--right" src="./images/left-leaf.png" />
+    </div>
 
     <div class="spacer wave1"></div>
     <!-- My services -->
     <section class="my-services" id="services">
-      <h2 class="section__title section__title--services fade-up__hidden">What I do</h2>
-      <div class="services" >
+      <h2 class="section__title section__title--services fade-up__hidden">
+        What I do
+      </h2>
+      <div class="services">
         <div class="service fade-right__hidden">
           <h3><span class="watermark">Design + Development</span></h3>
 
@@ -118,8 +118,10 @@
     <div class="spacer wave2"></div>
     <!-- About me -->
     <section class="about-me" id="about">
-      <h2 class="section__title section__title--about fade-right__hidden">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about fade-right__hidden"  >
+      <h2 class="section__title section__title--about fade-right__hidden">
+        Who I am
+      </h2>
+      <p class="section__subtitle section__subtitle--about fade-right__hidden">
         Lorem ipsum dolor sit amet.
       </p>
 
@@ -150,9 +152,16 @@
     <!-- My Work -->
 
     <section id="work">
-      <div class="swiper mySwiper fade-up__hidden">
-        <div class="swiper-wrapper">
-            <div class="project_item swiper-slide ">
+      <div class="carousel">
+        <div class="carousel-main">
+          <!-- Removed class carousel-arrow-disabled because we can cycle -->
+          <!--<div class="carousel-arrow carousel-arrow-disabled carousel-arrow-left"></div>-->
+
+          <i class="fa-regular fa-hand-point-left fa-xl"></i>
+
+          <div class="carousel-content">
+            <!-- Place here every elements of your carousel -->
+            <div class="my-card project_item swiper-slide" data-target="card">
               <div class="img_container">
                 <img
                   src="https://source.unsplash.com/200x200/?web-development,code,computers?1"
@@ -171,17 +180,19 @@
                   </div>
                   <p class="project_description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Mollitia error autem quos quasi? Modi suscipit autem earum fugit
-                    tenetur corporis!
+                    Mollitia error autem quos quasi? Modi suscipit autem earum
+                    fugit tenetur corporis!
                   </p>
                 </div>
-                <a href="portfolio-item.html"><button class="project_btn">More</button></a>
+                <a href="portfolio-item.html"
+                  ><button class="project_btn">More</button></a
+                >
               </div>
             </div>
-            <div class="project_item swiper-slide">
+            <div class="my-card project_item swiper-slide" data-target="card">
               <div class="img_container">
                 <img
-                  src="https://source.unsplash.com/200x200/?web-development,code,computers?2"
+                  src="https://source.unsplash.com/200x200/?web-development,code,computers?1"
                   alt=""
                   class="project_img"
                 />
@@ -197,17 +208,19 @@
                   </div>
                   <p class="project_description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Mollitia error autem quos quasi? Modi suscipit autem earum fugit
-                    tenetur corporis!
+                    Mollitia error autem quos quasi? Modi suscipit autem earum
+                    fugit tenetur corporis!
                   </p>
                 </div>
-                <button class="project_btn">More</button>
+                <a href="portfolio-item.html"
+                  ><button class="project_btn">More</button></a
+                >
               </div>
             </div>
-            <div class="project_item swiper-slide">
+            <div class="my-card project_item swiper-slide" data-target="card">
               <div class="img_container">
                 <img
-                  src="https://source.unsplash.com/200x200/?web-development,code,computers?3"
+                  src="https://source.unsplash.com/200x200/?web-development,code,computers?1"
                   alt=""
                   class="project_img"
                 />
@@ -223,25 +236,27 @@
                   </div>
                   <p class="project_description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Mollitia error autem quos quasi? Modi suscipit autem earum fugit
-                    tenetur corporis!
+                    Mollitia error autem quos quasi? Modi suscipit autem earum
+                    fugit tenetur corporis!
                   </p>
                 </div>
-                <button class="project_btn">More</button>
+                <a href="portfolio-item.html"
+                  ><button class="project_btn">More</button></a
+                >
               </div>
             </div>
-      
           </div>
-          
-          <div class="swiper-pagination"></div>
-          
+          <i class="fa-regular fa-hand-point-right fa-xl"></i>
         </div>
-        
-        
-      </div>
-      <div class="controls">
-        <div class="swiper-button-next"><i class="fa-regular fa-hand-point-right fa-xl"></i></div>
-        <div class="swiper-button-prev"><i class="fa-regular fa-hand-point-left fa-xl"></i></div>
+        <div class="carousel-navigation">
+          <!-- Insert the same number of dots here -->
+          <div class="carousel-dot carousel-dot-active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <!-- <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div> -->
+        </div>
       </div>
     </section>
 
@@ -275,8 +290,8 @@
         </li>
       </ul>
     </footer>
-  <!-- <script src="js/swiper-bundle.min.js"></script> -->
-  
+    <!-- <script src="js/swiper-bundle.min.js"></script> -->
+
     <script src="js/index.js" type="module"></script>
   </body>
 </html>

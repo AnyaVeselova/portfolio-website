@@ -440,11 +440,74 @@ header {
           box-shadow: 5px 0 0 10px #b0c4b1;
 }
 
-.swiper {
-  height: 100%;
-  padding: 1em;
-  width: 80%;
+/*Swiper*/
+.my-card {
+  /* Your custom style for the inner elements */
+  width: 100px;
+  height: 100px;
+  background: rebeccapurple;
+  /* color: white; */
+  text-align: center;
+  /* line-height: 100px; */
 }
+
+.carousel {
+  margin: 25px 75px;
+}
+
+.carousel-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.carousel-content {
+  display: flex;
+  margin: 0 35px;
+  max-width: 1400px;
+  overflow-x: hidden; /* VERY IMPORTANT: We rely on scrolling so we hide the overflow */
+  scroll-behavior: smooth;
+}
+
+.carousel-content > * {
+  flex: 0 0 auto;
+  margin-right: 50px;
+}
+
+.carousel-content > :last-child {
+  margin-right: 0;
+}
+
+
+.carousel-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  margin: 0 15px;
+  border: 3px solid black;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.carousel-dot:hover {
+  background-color: lightgray;
+}
+
+.carousel-dot-active,
+.carousel-dot-active:hover {
+  background-color: black;
+  cursor: auto;
+}
+
+/*slider*/
+
 
 .project_item {
   background-color: #fff;
@@ -453,6 +516,7 @@ header {
   -webkit-box-shadow: 1px 1px 10px 5px #4a5759;
           box-shadow: 1px 1px 10px 5px #4a5759;
   height: 600px;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -462,10 +526,7 @@ header {
   scale: 1.03;
 }
 
-.swiper-slide {
-  height: 600px;
-  margin-right: 1em;
-}
+
 
 .img_container {
   background-color: #4a5759;
@@ -561,19 +622,12 @@ header {
   color: orange;
 }
 
-.swiper-pagination {
-  position: relative;
-  margin-top: 2em;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #fff;
-}
 
 .swiper-button-next:after, .swiper-button-prev:after {
   content: '';
 }
 
+/*
 .swiper-button-next, .swiper-button-prev {
   width: calc(var(--swiper-navigation-size)/ 10 * 40);
 }
@@ -584,11 +638,11 @@ header {
   }
 }
 
+} */
 .swiper-button-next, .swiper-button-prev {
   top: 35%;
   color: #fff;
 }
-
 /* footer */
 .footer {
   background: #4a5759;
