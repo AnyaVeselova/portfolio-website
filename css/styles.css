@@ -443,16 +443,15 @@ header {
 /*Swiper*/
 .my-card {
   /* Your custom style for the inner elements */
-  width: 100px;
-  height: 100px;
-  background: rebeccapurple;
-  /* color: white; */
+
   text-align: center;
-  /* line-height: 100px; */
+
 }
 
 .carousel {
-  margin: 25px 75px;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
 }
 
 .carousel-main {
@@ -516,17 +515,15 @@ header {
   -webkit-box-shadow: 1px 1px 10px 5px #4a5759;
           box-shadow: 1px 1px 10px 5px #4a5759;
   height: 600px;
-  width: 100%;
+  width: 93%;
   overflow: hidden;
   position: relative;
+  margin: 1em;
 }
 
 .project_item:hover {
   cursor: pointer;
-  scale: 1.03;
 }
-
-
 
 .img_container {
   background-color: #4a5759;
@@ -622,24 +619,7 @@ header {
   color: orange;
 }
 
-
-.swiper-button-next:after, .swiper-button-prev:after {
-  content: '';
-}
-
-/*
-.swiper-button-next, .swiper-button-prev {
-  width: calc(var(--swiper-navigation-size)/ 10 * 40);
-}
-
-@media screen and (max-width: 900px) {
-  .swiper-button-next, .swiper-button-prev {
-    width: calc(var(--swiper-navigation-size)/ 10 * 20);
-  }
-}
-
-} */
-.swiper-button-next, .swiper-button-prev {
+.fa-hand-point-left, .fa-hand-point-right {
   top: 35%;
   color: #fff;
 }

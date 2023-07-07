@@ -49,8 +49,12 @@ class Carousel {
     // this.content.children[n] is the targeted element
     // .offsetLeft is the distance between the left of the element and the left border of the window
     // .scrollTo(x, y) scroll the element at x, y offset
-    this.content.scrollTo(this.content.children[n].offsetLeft - this.content.offsetLeft, 0)
-    console.log(this.content.children[n].offsetLeft,  this.content.offsetLeft)
+    this.content.style.paddingRight = "0"
+    this.content.scrollTo(this.content.children[n].offsetLeft - this.content.offsetLeft - 13, 0)
+   if(this.content.children[n].classList.contains("last")) {
+    this.content.style.paddingRight = "1em"
+   }
+      
     // Activate the corresponding dot
     for (let i = 0; i < this.dots.length; i++)
       // .classList is the list of classes on the HTML element
@@ -74,5 +78,6 @@ class Carousel {
 }
 
 // Initialize the carousel for every HTML element with class "carousel"
+
 const carousel = document.querySelector(".carousel")
 new Carousel(carousel).addEventListeners()
