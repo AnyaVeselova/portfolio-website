@@ -192,6 +192,7 @@ header {
   width: 100vw;
   -webkit-box-shadow: 5px 0px 10px 5px #b0c4b1;
           box-shadow: 5px 0px 10px 5px #b0c4b1;
+       
 }
 
 .nav__list {
@@ -208,6 +209,7 @@ header {
   list-style: none;
   margin: 0;
   padding: 0;
+
 }
 
 .nav__link {
@@ -216,6 +218,7 @@ header {
   font-weight: 900;
   text-decoration: none;
   text-shadow: 5px 5px 5px #4a5759;
+
 }
 
 .nav__link:focus {
@@ -467,6 +470,13 @@ header {
   max-width: 1400px;
   overflow-x: hidden; /* VERY IMPORTANT: We rely on scrolling so we hide the overflow */
   scroll-behavior: smooth;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  min-width: 100%;
 }
 
 .carousel-content > * {
@@ -960,6 +970,10 @@ nav.shift ul li a:hover:after {
 
 .service:nth-child(3) {
   transition-delay: 600ms;
+}
+
+.nav__item {
+  z-index: 1;
 }
 
 .nav__item:nth-child(2) {
