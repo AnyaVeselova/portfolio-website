@@ -724,7 +724,9 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+
 }
+
 
 @media (max-width: 600px) {
   .spacer_footer {
@@ -999,4 +1001,50 @@ nav.shift ul li a:hover:after {
   margin-bottom: 4.5em;
  text-decoration: underline;
  cursor: pointer;
+}
+
+/*Form*/
+form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 16px;
+  background: linear-gradient(96deg, rgba(238,205,163,1) 0%, rgba(239,98,159,1) 100%);
+  background-size: cover;
+  padding: 2em;
+  max-width: 550px;
+  margin: 1em auto;
+  outline: 5px solid #fff;
+}
+
+.standard-label {
+  grid-column: 1 / 2;
+  text-align: right;
+}
+
+.standard-input {
+  grid-column: 2 / 3;
+  width: 350px;
+}
+
+.submit-input {
+  grid-column: 2/3;
+  width: 150px;
+  margin-left: 4em;
+}
+
+.textarea {
+  height: 120px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact_main {
+  display: flex;
+margin-bottom: 4em;
+  flex-direction: column;
+  gap:1em;
+  justify-content: center;
+  align-items: center;
 }
