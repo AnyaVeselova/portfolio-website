@@ -64,15 +64,22 @@
           class="standard-input"
           type="email"
           id="contact-email"
+          name="email"
           required
         />
         <label class="standard-label" for="contact-telephone">Telephone:</label>
-        <input class="standard-input" type="tel" id="contact-telephone" />
+        <input
+          class="standard-input"
+          type="tel"
+          id="contact-telephone"
+          name="phone"
+        />
         <label class="standard-label" for="contact-message">Message:</label>
         <textarea
           class="standard-input textarea"
           maxlength="240"
           id="contact-message"
+          name="text"
           required
         ></textarea>
         <input class="submit-input" type="submit" value="Send message" />
