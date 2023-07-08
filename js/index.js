@@ -42,42 +42,29 @@ class Carousel {
 
   // This function will make the element at index n visible in the carousel
   makeVisible(n) {
-    // Validate index
     if (n < 0 || n >= this.dots.length)
       return;
     this.activeElement = n
-    // Scroll the content to bring the element into view
-    // this.content is the parent container of every elements
-    // this.content.children[n] is the targeted element
-    // .offsetLeft is the distance between the left of the element and the left border of the window
-    // .scrollTo(x, y) scroll the element at x, y offset
     this.content.style.paddingRight = "0"
     this.content.scrollTo(this.content.children[n].offsetLeft - this.content.offsetLeft - 15, 0)
-   if(this.content.children[n].classList.contains("last")) {
+    if(this.content.children[n].classList.contains("last")) {
     this.content.style.paddingRight = "1em"
     }
-      
-    // Activate the corresponding dot
+   
     for (let i = 0; i < this.dots.length; i++)
-      // .classList is the list of classes on the HTML element
-      // .toggle(classes, force) is used to add or remove the given classes according to the boolean
-      this.dots[i].classList.toggle("carousel-dot-active", this.activeElement === i)
-    // Verify the left and right arrow to disable them if necessary
-    // No longer needed because we want to be able to cycle through the carousel entries
-    //this.arrowLeft.classList.toggle("carousel-arrow-disabled", this.activeElement === 0);
-    //this.arrowRight.classList.toggle("carousel-arrow-disabled", this.activeElement === this.dots.length - 1);
+    this.dots[i].classList.toggle("carousel-dot-active", this.activeElement === i)
   }
 
-  // This function will register and required event listeners
+
   addEventListeners() {
     [...this.dots].map(dot => dot.style.display = "block")
     this.arrowLeft.style.display = "block"
     this.arrowRight.style.display = "block"
     this.content.classList.remove("grid")
-    // To handle the click on the dots
+ 
     for (let i = 0; i < this.dots.length; i++)
       this.dots[i].addEventListener("click", () => this.makeVisible(i))
-    // And on the left / right arrows
+   
     this.arrowLeft.addEventListener("click", () => this.makeVisible((this.activeElement === 0 ? this.dots.length : this.activeElement) - 1)) // If we are on the first element and we go left, then we activate the last one
     this.arrowRight.addEventListener("click", () => this.makeVisible(this.activeElement === this.dots.length - 1 ? 0 : this.activeElement + 1)) // If we are on the last element and we go right, then we activate the first one
   }
@@ -109,9 +96,44 @@ window.addEventListener("resize", () => {
               
  
 
+function setInitialStyle() {
+  let children = document.querySelectorAll(".carousel-content .my-card:nth-child(n+3)")
+  let childrenArr = [...children]
+  
+  childrenArr.forEach(child => {
+    child.style.display = "none"
+    
+  })
 
+  return childrenArr
 
+}
 
+setInitialStyle()
+
+function showMore() {
+
+  let childrenArr = setInitialStyle()
+  
+  const showMoreBtn = document.getElementById("more")
+
+  showMoreBtn.addEventListener("click", function() {
+    childrenArr.forEach(child => {
+     if(child.style.display == "none") {
+       child.style.display = "block"
+       showMoreBtn.innerHTML = "<p>view less</p>"
+     } else {
+      child.style.display = "none"
+      showMoreBtn.innerHTML = "<p>view more</p>"
+     }
+      
+    })
+      
+  })
+    
+}
+
+showMore()
 
 
 
