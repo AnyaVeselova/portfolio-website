@@ -7,11 +7,13 @@ const fadeLeft = document.querySelectorAll(".fade-left__hidden")
 const fadeUp = document.querySelectorAll(".fade-up__hidden")
 const carousel = document.querySelector(".carousel")
 const showMoreBtn = document.getElementById("more")
+const form = document.getElementById("contact-form")
 
 
 fadeRight.forEach(el => observer.observe(el))
 fadeLeft.forEach(el => observer.observe(el))
 fadeUp.forEach(el => observer.observe(el))
+
 
 
 // Initialize the carousel for every HTML element with class "carousel"
@@ -36,7 +38,6 @@ window.addEventListener("resize", () => {
 })
 // setInitialStyle()
 // showMore()
-
 
 
 
