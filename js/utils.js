@@ -2,10 +2,17 @@ function setInitialStyle() {
   let children = document.querySelectorAll(".carousel-content .my-card:nth-child(n+3)")
   let childrenArr = [...children]
   
+  if(window.innerWidth <= 446 ||  window.innerWidth >= 678) {
   childrenArr.forEach(child => {
     child.style.display = "none"
     
   })
+  }else {
+    childrenArr.forEach(child => {
+      child.style.display = "block"
+      
+    })
+  }
 
   return childrenArr
 
