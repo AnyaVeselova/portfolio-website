@@ -523,8 +523,8 @@ header {
   background-color: #fff;
   border-radius: 15px;
   border: 4px solid #b0c4b1;
-  -webkit-box-shadow: 1px 1px 10px 5px #4a5759;
-          box-shadow: 1px 1px 10px 5px #4a5759;
+  -webkit-box-shadow: 1px 1px 10px 3px #4a5759b7;
+          box-shadow: 1px 1px 10px 3px #4a5759b7;
   height: 600px;
   width: 93%;
   overflow: hidden;
