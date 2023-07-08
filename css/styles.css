@@ -474,6 +474,7 @@ header {
 
 .grid {
   display: grid;
+  gap:2em;
   grid-template-columns: repeat(auto-fit, 300px);
   justify-content: center;
   min-width: 100%;
