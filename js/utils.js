@@ -1,5 +1,12 @@
 function setInitialStyle() {
-  let children = document.querySelectorAll(".carousel-content .my-card:nth-child(n+3)")
+  let children 
+  if(window.innerWidth >= 678) {
+    children = document.querySelectorAll(".carousel-content .my-card:nth-child(n+4)")
+  }else if(window.innerWidth <= 446) {
+    children = document.querySelectorAll(".carousel-content .my-card:nth-child(n+2)")
+  }else {
+    children = document.querySelectorAll(".carousel-content .my-card")
+  }
   let childrenArr = [...children]
   
   if(window.innerWidth <= 446 ||  window.innerWidth >= 678) {

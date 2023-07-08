@@ -27,14 +27,16 @@ if(window.innerWidth <= 678 && window.innerWidth >= 446) {
 }
 layouts() 
 
+setInitialStyle()
+showMore()
 window.addEventListener("resize", () => {
   layouts() 
   setInitialStyle()
   showMore()
 })
+// setInitialStyle()
+// showMore()
 
-setInitialStyle()
-showMore()
 
 
 

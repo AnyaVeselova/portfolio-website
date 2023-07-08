@@ -13,7 +13,7 @@ export default class Carousel {
   // This function will make the element at index n visible in the carousel
   makeVisible(n) {
     if (n < 0 || n >= this.dots.length)
-      return;
+      return
     this.activeElement = n
     this.content.style.paddingRight = "0"
     this.content.scrollTo(this.content.children[n].offsetLeft - this.content.offsetLeft - 15, 0)
