@@ -93,14 +93,18 @@ class Carousel {
 }
 
 // Initialize the carousel for every HTML element with class "carousel"
+function layouts() {
+if(window.innerWidth <= 678 && window.innerWidth >= 446) {
+  new Carousel(carousel).addEventListeners()
+
+}else if(window.innerWidth <= 446 ||  window.innerWidth >= 678){
+  new Carousel(carousel).renderGrid()
+}
+}
+layouts() 
 
 window.addEventListener("resize", () => {
-  if(window.innerWidth <= 678 && window.innerWidth >= 446) {
-    new Carousel(carousel).addEventListeners()
-
-  }else if(window.innerWidth <= 446 ||  window.innerWidth >= 678){
-    new Carousel(carousel).renderGrid()
-  }
+  layouts() 
 })
               
  
