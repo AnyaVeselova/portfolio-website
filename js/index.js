@@ -8,6 +8,7 @@ const fadeUp = document.querySelectorAll(".fade-up__hidden")
 const carousel = document.querySelector(".carousel")
 const showMoreBtn = document.getElementById("more")
 const form = document.getElementById("contact-form")
+const email = document.getElementById("#contact-email")
 
 
 fadeRight.forEach(el => observer.observe(el))
@@ -38,8 +39,5 @@ window.addEventListener("resize", () => {
 })
 // setInitialStyle()
 // showMore()
-
-
-
 
 
