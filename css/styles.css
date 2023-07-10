@@ -373,6 +373,11 @@ header {
   border-radius: 10px;
 }
 
+.service img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 @media (min-width: 800px) {
   .services {
     display: -webkit-box;
