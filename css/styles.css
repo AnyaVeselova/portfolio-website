@@ -92,6 +92,8 @@ strong {
   margin-bottom: 1em;
 }
 
+
+
 .btn:hover {
   background-color: #4a5759;
   color: #f7e1d7;
@@ -1022,12 +1024,12 @@ form {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 16px;
-  background: linear-gradient(96deg, rgba(238,205,163,1) 0%, rgba(239,98,159,1) 100%);
+  background: rgb(255, 255, 255, 0.3);
   background-size: cover;
   padding: 2em;
   max-width: 550px;
   margin: 1em auto;
-  outline: 5px solid #fff;
+  border-radius: 15px;
 }
 
 .standard-label {
