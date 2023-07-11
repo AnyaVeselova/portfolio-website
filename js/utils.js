@@ -34,7 +34,7 @@ function showMore() {
   showMoreBtn.addEventListener("click", function() {
     childrenArr.forEach(child => {
      if(child.style.display == "none") {
-       child.style.display = "block"
+       child.style.display = "inline-block"
        showMoreBtn.innerHTML = "<p>view less</p>"
      } else {
       child.style.display = "none"
