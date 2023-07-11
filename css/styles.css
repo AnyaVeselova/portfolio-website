@@ -359,10 +359,12 @@ header {
 
 .services {
   margin-bottom: 4em;
+  display: grid;
+  gap:2em;
+  grid-template-columns: repeat(auto-fit, 300px);
 }
 
 .service {
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -380,9 +382,10 @@ header {
 
 @media (min-width: 800px) {
   .services {
-    display: -webkit-box;
+    /* display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex; */
+
     margin-left: auto;
     margin-right: auto;
     max-width: 1000px;
