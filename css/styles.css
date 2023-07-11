@@ -187,6 +187,7 @@ header {
 
 .nav {
   background: #b0c4b1;
+  
   color: #fff;
   height: 100px;
   margin-right: 20px;
@@ -251,6 +252,7 @@ header {
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: center;
+    align-items: center;
   }
 }
 
