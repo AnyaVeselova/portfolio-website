@@ -985,6 +985,10 @@ nav.shift ul li a:hover:after {
   transition-delay: 600ms;
 }
 
+.service:nth-child(4) {
+  transition-delay: 800ms;
+}
+
 .nav__item {
   z-index: 1;
 }
