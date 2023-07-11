@@ -456,7 +456,7 @@ header {
 /*Swiper*/
 .my-card {
   /* Your custom style for the inner elements */
-
+  position: relative;
   text-align: center;
 
 }
@@ -985,9 +985,9 @@ nav.shift ul li a:hover:after {
   transition-delay: 600ms;
 }
 
-.service:nth-child(4) {
+/* .service:nth-child(4) {
   transition-delay: 800ms;
-}
+} */
 
 .nav__item {
   z-index: 1;
@@ -1064,7 +1064,19 @@ form {
 }
 
 /*What I do section*/
-
-
-
-
+#featured-card {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  width: 120px;
+  height: 40px;
+  background-image: url("../images/founders-and-coders.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+  font-weight: bold;
+  
+}
