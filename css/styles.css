@@ -73,6 +73,7 @@ strong {
 
 /* Buttons */
 .btn {
+  text-align: center;
   background: #aec5eb;
   -webkit-box-shadow: 0 0 5px #4a5759;
           box-shadow: 0 0 5px #4a5759;
@@ -1046,8 +1047,18 @@ form {
 
 .submit-input {
   grid-column: 2/3;
-  width: 150px;
+  width: 200px;
   margin-left: 4em;
+  font-size: 1rem;
+}
+
+.submit-input:hover {
+  transform: scale(1.03);
+}
+
+.submit-input:active {
+  transform: scale(1);
+  box-shadow: inset 5px 5px 10px -3px rgba(0,0, 0, 0.7);
 }
 
 .textarea {
@@ -1065,6 +1076,16 @@ form {
   gap:1em;
   justify-content: center;
   align-items: center;
+}
+
+.submit-input {
+  background-color: #edafb8;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  text-align: center;
+  padding: 0.5em;
+  font-weight: 700;
 }
 
 /*What I do section*/
