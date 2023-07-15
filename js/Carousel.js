@@ -1,16 +1,15 @@
 export default class Carousel {
   constructor(element) {
-    // Retrieve every elements needed by the carousel (arrows, dots, ...)
+   
     this.carousel = document.querySelector(".carousel")
     this.content = element.querySelector(".carousel-content")
     this.arrowLeft = element.querySelector(".fa-hand-point-left")
     this.arrowRight = element.querySelector(".fa-hand-point-right")
     this.dots = element.querySelector(".carousel-navigation").children
-    // The index of the current active element of the carousel
     this.activeElement = 0
   }
 
-  // This function will make the element at index n visible in the carousel
+  
   makeVisible(n) {
     if (n < 0 || n >= this.dots.length)
       return
