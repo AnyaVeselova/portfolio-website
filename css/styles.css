@@ -93,8 +93,6 @@ strong {
   margin-bottom: 1em;
 }
 
-
-
 .btn:hover {
   background-color: #4a5759;
   color: #f7e1d7;
@@ -483,7 +481,7 @@ header {
   display: flex;
   margin: 0 35px;
   max-width: 1400px;
-  overflow-x: hidden; /* VERY IMPORTANT: We rely on scrolling so we hide the overflow */
+  overflow-x: hidden; 
   scroll-behavior: smooth;
 }
 
