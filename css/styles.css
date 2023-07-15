@@ -551,9 +551,27 @@ header {
 
 .img_container {
   background-color: #4a5759;
-  border-radius: 15px;
   height: 40%;
   width: 100%;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+}
+
+.snake {
+  background-image: url("../images/snake-project.png");
+}
+
+.quiz {
+  background-image: url("../images/quizzical.png");
+}
+
+.tenzi {
+  background-image: url("../images/end-game-tenzi.png");
+}
+
+.watchlist {
+  background-image: url("../images/watchlist.png");
 }
 
 .project_img {
