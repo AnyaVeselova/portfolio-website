@@ -9,7 +9,6 @@ const carousel = document.querySelector(".carousel")
 const showMoreBtn = document.getElementById("more")
 
 
-
 fadeRight.forEach(el => observer.observe(el))
 fadeLeft.forEach(el => observer.observe(el))
 fadeUp.forEach(el => observer.observe(el))
